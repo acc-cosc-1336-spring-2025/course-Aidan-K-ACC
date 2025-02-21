@@ -16,3 +16,11 @@ def get_faculty_rating(ratio):
     if ratio<=0.6:
         return "Unacceptable"
 
+def sum_odd_numbers(num):
+    sum = 0
+    i = 0
+    while i <= num:
+        if i%2 == 1:
+            sum += i
+        i += 1
+    return sum
