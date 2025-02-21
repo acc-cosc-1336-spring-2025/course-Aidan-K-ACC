@@ -37,8 +37,5 @@ def hw3_menu():
         if choice == 3:
             print("Exiting Program...")
             exit
-    
-    
 
-    
 hw3_menu()
