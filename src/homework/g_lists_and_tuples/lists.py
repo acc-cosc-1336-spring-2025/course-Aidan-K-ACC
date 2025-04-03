@@ -12,3 +12,28 @@ def get_lowest_list_value(list):
             l= item
     return l
 
+def get_p_distance(list1,list2):
+    dif= 0
+    for item in range(0,len(list1)):
+        if list1[item] != list2[item]:
+            dif+= 1
+    p_dis= dif/len(list1)
+    return p_dis
+
+def get_p_distance_matrix(data_matrix):
+    result_matrix= []
+    temp_list= []
+    count= 0
+    for item in range(0,len(data_matrix)):
+        for item in range(0,len(data_matrix)):
+            list1=data_matrix[item]
+            list2= data_matrix[0]
+            temp_list.append(get_p_distance(list1,list2))
+    result_matrix.append(temp_list)    
+    return result_matrix
+
+
+sample_data= [['T','T','T','C','C','A','T','T','T','A'],['G','A','T','T','C','A','T','T','T','C'],['T','T','T','C','C','A','T','T','T','T'],['G','T','T','C','C','A','T','T','T','A']]
+print(get_p_distance_matrix(sample_data))
+# print(get_p_distance(sample_data[0],sample_data[1]))
+print(sample_data[0])
