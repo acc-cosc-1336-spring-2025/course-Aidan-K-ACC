@@ -31,7 +31,3 @@ def get_p_distance_matrix(data_matrix):
         result_matrix.append(temp_list)    
     return result_matrix
 
-
-sample_data= [['T','T','T','C','C','A','T','T','T','A'],['G','A','T','T','C','A','T','T','T','C'],['T','T','T','C','C','A','T','T','T','T'],['G','T','T','C','C','A','T','T','T','A']]
-print(get_p_distance_matrix(sample_data))
-# print(get_p_distance(sample_data[0],sample_data[1]))
